@@ -1,0 +1,4 @@
+zod is used to design schemas depsite being defined in 
+mongoose it can beforehand checked if the data entered is a valid input or not 
+
+nextjs runs on edge it means it runs certain code whhrn it is demanded 
