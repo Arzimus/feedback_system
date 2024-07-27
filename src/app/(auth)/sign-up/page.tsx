@@ -54,6 +54,7 @@ export default function SignUpForm() {
           );
           setUsernameMessage(response.data.message);
         } catch (error) {
+          // type assertion with as ->it means giving it the same type as the AxioError
           const axiosError = error as AxiosError<ApiResponse>;
           setUsernameMessage(
             axiosError.response?.data.message ?? 'Error checking username'
