@@ -27,6 +27,7 @@ const Dashboard: React.FC = () => {
 
   const { toast } = useToast();
   const { register, watch, setValue } = useForm()
+  // used to get session on the client side whereas getUserSession is used on server side
   const { data: session } = useSession()
   const form = useForm({
     resolver: zodResolver(AcceptMessageSchema)
