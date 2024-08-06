@@ -18,6 +18,7 @@ declare module 'next-auth' {
   }
 }
 
+// extending the jwt interfacea to add custome properties to the interfce
 declare module 'next-auth/jwt' {
   interface JWT {
     _id?: string;
